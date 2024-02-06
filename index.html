@@ -19,33 +19,39 @@
     <header>
       <div class="container">
         <div class="menu__container"> 
+     
         <ul class="menu__desk">
           <li><a href="">О магазине</a></li>
           <li><a href="">Гарантия на товар</a></li>
           <li><a href="">Как оплатить</a></li>
           <li><a href="">Способы доставки</a></li>
         </ul>
-        <a href="">Войти</a></div>
+        <a class="cart" href="">Войти</a></div>
         <div class="template-header">
-
-       
-        <div>
-          <label><input type="text" /></label> <a href=""></a>
+          <a class="btn__menu"><svg>
+            <use href="./img/symbol-defs.svg#icon-menu"></use></svg></a>
+<img class="logo" src="" alt="">
+<a class="btn__search"><svg>
+  <use href="./img/symbol-defs.svg#icon-search"></use></svg></a>
+        <div class="search">
+          <label><input type="text" placeholder="Поиск товара"/></label> <a href="">Найти</a>
         </div>
-        <ul>
-          <li><img src="" alt="">0636915898</li>
+        
+        <ul class="phone__list">
+          <li ><img class="icon__life" src="./img/life.webp" alt=""><span class="color">063</span> 691 58 98 <img class="arrow" src="" alt=""></li>
           <li>
             <form class="contact__form">
               <label>
-                <input type="text" />
-                <input type="text" />
-                <textarea name="" id="" cols="30" rows="10"></textarea>
+                <input type="text" placeholder="Введите Ваш номер"/>
+                <input type="text" placeholder="Ваше имя"/>
+                <textarea name="" id="" cols="30" rows="10" placeholder="Если хотите, введите интересующий Вас вопрос"></textarea>
               </label>
-              <a href=""></a>
+              <a href="">Перезвоните мне</a>
             </form>
           </li>
         </ul>
-        <a href=""> </a>
+        <a class="basket" href=""><img src="" alt="">
+          <span class="basket__text">Корзина пуста</span></a>
       </div>
     </div>
     </header>
@@ -70,8 +76,20 @@
       </section>
       <section>
         <div class="container">
-          <div class="">
-            <div>your content</div>
+          <div class="line__btn">
+            <div class="line__btn-left-part"></div>
+            <div class="line__btn-right-part">
+              <a class="left"><svg>
+                <use href="./img/symbol-defs.svg#icon-arrow-left"></use></svg></a>
+              <a class="right"><svg>
+                <use href="./img/symbol-defs.svg#icon-arrow-right"></use></svg></a>
+            </div>
+          </div>
+          <div class="product__slider">
+            <div><img src="./img/kosilka.jpg" alt="">
+            <a class="product" href="">Газонокосилка Bosch Rotak ARM 34 Ergo-Flex (06008A6101)</a>
+          <div></div>
+        <a href=""></a></div>
             <div>your content</div>
             <div>your content</div>
           </div>
@@ -80,7 +98,7 @@
       <section>
         <div class="container catalog__container">
           <div class="catalog__left-part">
-            <ul>
+            <ul class="catalog__list">
               <li class="catalog__item">
                 <a href=""><img class="catalog__img" src="./img/kosilka.jpg" alt="" /></a
                 >
@@ -267,9 +285,9 @@
           </div>
           <div class="catalog__right-part">
              <div>
-            <a href="">Установка генераторов в Одессе</a>
+            <a class="catalog__right-part-title" href="">Установка генераторов в Одессе</a>
             <div>Установка и обслуживание генераторов в Одессе.</div>
-            <ul>
+            <ul class="catalog__right-part-list">
               <li>Бесплатный выезд на объект.</li>
               <li>Составление монтажной сметы.</li>
               <li>Замер электропотребления объекта.</li>
@@ -280,9 +298,9 @@
             </ul>
         </div>
         <div>
-            <a href="">Сервисное обслуживание</a>
+            <a class="catalog__right-part-title" href="">Сервисное обслуживание</a>
             <div>Мы ремонтируем</div>
-            <ul>
+            <ul class="catalog__right-part-list">
               <li>Генераторы бензиновые, дизельные</li>
               <li>Садовую (электро-бензо) технику</li>
               <li>Насосноеоборудование, гидрофоры </li>
@@ -290,8 +308,8 @@
             </ul>
         </div>
         <div>
-            <a href="">Видеонаблюдение</a>
-            <ul>
+            <a class="catalog__right-part-title" href="">Видеонаблюдение</a>
+            <ul class="catalog__right-part-list">
               <li>Бесплатный выезд на объект</li>
               <li>Составление сметы</li>
               <li>Установка видеонаблюдения</li>
@@ -304,9 +322,9 @@
             </ul>
         </div>
         <div>
-            <a href="">Рулонный газон</a>
+            <a class="catalog__right-part-title" href="">Рулонный газон</a>
             <div>У нас вы можете купить рулонный газон в Одессе с бесплатной доставкой на объект. Заказать проектирование и профессиональную укладку рулонных зазонов любого типа.</div>
-            <ul>
+            <ul  class="catalog__right-part-list">
               <li>Объекты любой сложности</li>
               <li>Бесплатная доставка рулонно газона по Одессе</li>
               <li>Подготовка почвы</li>

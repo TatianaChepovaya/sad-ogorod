@@ -19,6 +19,7 @@ body {
 }
 
 body {
+  font-family: Arial, Helvetica, sans-serif;
   color: var(--main-dark-color);
   font-weight: 300;
   margin: 0;
@@ -35,7 +36,7 @@ ul {
 
 .container {
   width: 100%;
-  max-width: 1340px;
+  max-width: 1274px;
   padding-right: 15px;
   padding-left: 15px;
   margin: 0 auto;
@@ -44,25 +45,178 @@ ul {
 img {
   display: block;
   max-width: 100%;
+}.menu__container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  margin-bottom: 8px;
+  margin-left: 90px;
+}
+.btn__menu{
+  width: 30px;
+  height: 28px;
+  flex: none;
+}
+.btn__menu svg{
+  width: 100%;
+  height: 100%;
+  fill: #fff;
 }
 .menu__desk {
   display: flex;
 }
-.menu__container {
-  display: flex;
-  justify-content: space-between;
+.menu__desk li{
+  border-right: 1px #bbb dotted;
+  white-space: nowrap;
+  font-size: 14px;
+  padding: 6px 10px;
+  color: #444;
 }
 .template-header {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
   background-color: #84b627;
+  height: 56px;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+.logo{
+  width: 340px;
+}
+.btn__search{
+  width: 30px;
+  height: 30px;
+  flex: none;
+}
+.btn__search svg{
+  width: 100%;
+  height: 100%;
+  fill: #fff;
+}
+.search{
+  position: relative;
+  height: 38px;
+}
+.search input{
+  width: 100%;
+  height: 100%;
+  background: rgba(255,255,255,.9);
+  color: rgba(0,0,0,.3);
+  font-size: 17px;
+border: 0;
+  padding: 0 80px 0 8px;
+    border-radius: 3px;
+    line-height: 38px;
+    transition: background-color .25s ease 0s;
+    box-shadow: 1px 1px 0 rgba(0,0,0,.15);
+}
+
+.search a{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  right: 2px;
+    top: 2px;
+    height: 34px;
+    padding: 4px 12px;
+    margin: 0;
+    border: 0;
+    background: linear-gradient(to bottom,rgba(143,201,43,1) 0,rgba(149,207,55,1) 0,rgba(116,175,21,1) 62%,rgba(110,169,9,1) 100%);
+    border: 1px #7bab35 solid;
+    border-radius: 2px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    text-shadow: 1px 1px 0 rgba(0,0,0,.1);
+}
+.phone__list{
+  position: relative;
+  width: 249px;
+
+    border: 1px rgba(255,255,255,.7) solid;
+    background: rgba(0,0,0,.1);
+    border-radius: 3px;
+    list-style-type: none;
+    transition: background-color .2s;
+    cursor: default;
+    z-index: 6;
+}
+.phone__list .color{
+  text-shadow: 0 1px 1px rgba(0,0,0,.08);
+  color: rgba(255,255,255,.8);
+}
+.phone__list li:first-child{
+position: relative;
+display: flex;
+justify-content: space-evenly;
+font-size: 28px;
+color: #fff;
+
+}
+.phone__list li:last-child{
+  position: absolute;
+}
+.phone__list .arrow{
+  width: 13px;
+  height: 12px;
+}
+.phone__list .icon__life{
+  width: 30px;
+  height: 30px;
+}
+.contact__form{
+  display: none;
+  padding: 10px 5px 8px;
+  background: #fff6cd!important;
+  border-radius: 0 0 3px 3px;
+  overflow: hidden;
 }
 .contact__form label {
   display: flex;
   flex-flow: column wrap;
-  width: 249px;
+
+}
+.contact__form input,
+.contact__form textarea{
+  width: 100%;
+   border: 1px #ddd solid;
+    border-radius: 2px;
+    padding: 6px 8px;
+    font-size: 17px; 
+    margin-bottom: 5px;
+}
+.contact__form textarea{
+  height: 65px;
+  min-height: 55px;
+  max-height: 100px;
+  font-size: 14px;
+  resize: vertical;
+}
+.contact__form a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 35px;
+  padding: 0;
+  line-height: 100%;
+  font-size: 17px;
+    color: #fff;
+    border: 1px #7bab35 solid;
+    border-bottom: 1px #649025 solid;
+    background: linear-gradient(to bottom,rgba(143,201,43,1) 0,rgba(149,207,55,1) 0,rgba(116,175,21,1) 62%,rgba(110,169,9,1) 100%);
+    box-shadow: 0 1px 2px 0 rgba(80,125,20,.5);
+    text-shadow: 1px 1px 0 rgba(0,0,0,.1);
+    border-radius: 3px;
+
+}
+.logo__manufacturer{
+  padding: 20px 0;
 }
 .logo__manufacturer-list {
   display: flex;
+  justify-content: center;
 }
 .logo__manufacturer img {
   width: 200px;
@@ -90,7 +244,7 @@ img {
   margin-bottom: 5px;
 }
 .catalog__right-part {
-  padding-left: 15px;
+  padding-left: 20px;
   border-left: 2px #ddd solid;
 }
 
@@ -162,8 +316,69 @@ display: none;
 
 
 @media screen and (min-width: 768px) {
+    .container {
+
+        padding-right: 25px;
+        padding-left: 25px;
+      }
+    .catalog__container {
+       padding-bottom: 60px;
+      }
+      .logo{
+        margin-right: 10px;
+      }
+      .search{
+        margin-right: 10px;
+      }
+      .phone__list{
+        margin-right: 10px;
+      }
+      .basket{
+        display: flex;
+      }
+      .basket img{
+        width: 60px;
+      }
+      .basket__text{
+        display: block;
+        width: 50%;
+      }
+      .line__btn{
+        display: flex;
+        align-items: center;
+      }
+      .line__btn-left-part{
+        height: 3px;
+        width: 100%;
+        background-color: #94c74a;
+        margin-right: 5px;
+      }
+      .line__btn-right-part{
+        display: flex;
+      }
+      .line__btn-right-part .right svg,
+      .line__btn-right-part .left svg{
+        width: 40px;
+        height: 25px;
+      }
+      .line__btn-right-part .left svg{
+        fill: #dbdcda;
+      }
+      .line__btn-right-part .right svg{
+        fill:#84ae49;
+      }
+      .catalog__right-part-list li{
+        font-size: 14px;
+        color: #666;
+      }
+      .catalog__right-part-list li::before{
+        content: "-";
+        padding: 0 0.5em 0 0;
+        
+      }
     footer {
         padding-top: 30px;
+        padding-bottom: 30px;
         border-top: 1px rgba(0, 0, 0, 0.1) solid;
       }
   .footer__container {
@@ -218,6 +433,42 @@ display: none;
   border: 0;
 
 }
+.catalog__list{
+  max-width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -10px;
+    margin-bottom: -45px;
+} 
+  
+.catalog__item{
+  max-width: 296px;
+    margin-right: 10px;
+    margin-bottom: 45px;  flex-basis: calc((100% - 2 * 10px) / 2);
+}
+.catalog__right-part{
+    width: 233px;
+}
+.catalog__right-part-title{
+  color: #0072bc;
+font-size: 18px;
+line-height: 18px;
+text-decoration: underline;
+} 
+}
 
-
+@media screen and (min-width: 1024px) {
+ .cart{
+  display: block;
+  border-bottom: 1px #000 dotted;
+ }
+    .catalog__item{
+        flex-basis: calc((100% - 3 * 10px) / 3);
+    }
+}
+@media screen and (min-width: 1400px) {
+ 
+.search{
+  width: 478px;
+}
 }
