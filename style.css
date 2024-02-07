@@ -146,6 +146,10 @@ img {
   width: 30px;
   height: 30px;
 }
+.btn__phone svg{
+  width: 100%;
+  height: 100%;
+}
 .phone__list {
   display: none;
   position: relative;
@@ -278,7 +282,49 @@ img {
 .catalog__right-part {
   display: none;
 }
-
+.product__item{
+  width: 180px !important;
+  padding: 7px 10px;
+    margin: 0 1px 0 0;
+    border-right: 1px #e2e2e2 solid;
+    background: #fff;
+    text-align: left;
+    overflow: hidden;
+    transform: translateZ(0);
+}
+.product__img{
+  width: 100%;
+  height: 160px;
+}
+.product__title{
+  display: block;
+  color: #145989;
+    font-size: 14px;
+    line-height: 16px;
+    height: 65px;
+    margin-bottom: 5px;
+}
+.product__cash{
+  font-size: 22px;
+  margin-bottom: 5px;
+}
+.product__cash span{
+  font-size: 17px;
+}
+.btn__buy{
+  display: inline-block;
+    padding: 2px 8px 3px;
+    margin: 0 0 10px 0;
+    border-radius: 2px;
+    font-size: 18px;
+    color: #fff;  
+    border: 1px #7bab35 solid;
+    border-bottom: 1px #649025 solid;
+    background: linear-gradient(to bottom,rgba(143,201,43,1) 0,rgba(149,207,55,1) 0,rgba(116,175,21,1) 62%,rgba(110,169,9,1) 100%);
+    box-shadow: 0 1px 2px 0 rgba(80,125,20,.5);
+    text-shadow: 1px 1px 0 rgba(0,0,0,.1);
+    margin-bottom: 10px;
+}
 .footer__mob-menu {
   border-top: 1px #eaeaea solid;
   height: 48px;
@@ -394,15 +440,15 @@ img {
   .line__btn-right-part {
     display: flex;
   }
-  .line__btn-right-part .right svg,
-  .line__btn-right-part .left svg {
+  .line__btn-right-arrow svg,
+  .line__btn-left-arrow svg {
     width: 40px;
     height: 25px;
   }
-  .line__btn-right-part .left svg {
+  .line__btn-left-arrow  svg {
     fill: #dbdcda;
   }
-  .line__btn-right-part .right svg {
+  .line__btn-right-arrow svg {
     fill: #84ae49;
   }
   .catalog__right-part {
