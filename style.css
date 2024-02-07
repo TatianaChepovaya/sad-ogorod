@@ -236,16 +236,8 @@ img {
 }
 .logo__manufacturer {
   display: none;
-  padding: 20px 0;
 }
-.logo__manufacturer-list {
-  display: flex;
-  justify-content: center;
-}
-.logo__manufacturer img {
-  width: 200px;
-  height: auto;
-}
+
 .line__btn-right-part {
   display: none;
 }
@@ -375,6 +367,19 @@ img {
   .basket__text {
     display: block;
     width: 50%;
+  }
+  .logo__manufacturer {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+  }
+  .logo__manufacturer-list {
+    display: flex;
+    justify-content: center;
+  }
+  .logo__manufacturer img {
+    width: 200px;
+    height: auto;
   }
   .line__btn {
     display: flex;
