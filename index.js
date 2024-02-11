@@ -6,6 +6,12 @@ $(document).ready(function () {
     autoplaySpeed: 2000,
     dots: true,
     nextArrow: $('.line__btn-right-arrow'),
-    prevArrow: $('.line__btn-left-arrow'),
+    prevArrow: $('.line__btn-left-arrow'), 
+    variableWidth: true,
+
   });
+  $('.catalog__item').on('click',function(event){
+    event.preventDefault();
+    $(this).toggleClass('active');
+  })
 });
