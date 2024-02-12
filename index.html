@@ -25,7 +25,29 @@
             <li><a href="">Как оплатить</a></li>
             <li><a href="">Способы доставки</a></li>
           </ul>
-          <a class="cart" href="">Войти</a>
+          <a class="login" href="">
+            <span class="login__close">Войти</span>
+            <span class="login__open">Вход в магазин</span></a
+          >
+          <div class="login__container">
+            <form class="login__form">
+              <label>
+                <input type="text" placeholder="E-mail" />
+                <input type="text" placeholder="Пароль" />
+              </label>
+              <ul class="login__form-btn">
+                <li><a>Войти</a></li>
+                <li><a>Не помню пароль</a></li>
+              </ul>
+            </form>
+            <div class="login__label"><span>Войдите с помощью аккаунта</span></div>
+            <ul class="login__btn">
+              <li><a></a></li>
+              <li><a></a></li>
+            </ul>
+            <div class="login__label"><span>Еще не зарегистрированные?</span></div>
+            <a class="login__registration">Зарегистрироватся</a>
+          </div>
         </div>
         <div class="template-header">
           <img class="logo" src="" alt="" />
@@ -256,10 +278,12 @@
               <ul class="catalog__list">
                 <li class="catalog__item">
                   <a class="catalog__img" href=""
-                    ><img  src="./img/kosilka.jpg" alt=""
+                    ><img src="./img/kosilka.jpg" alt=""
                   /></a>
                   <div class="catalog__item-part">
-                    <a class="catalog__item-title" href="#">Садовый инвентарь</a>
+                    <a class="catalog__item-title" href="#"
+                      >Садовый инвентарь</a
+                    >
                     <ul>
                       <li><a href="">Барабанные газонокосилки</a></li>
                       <li><a href="">Гриль BBQ</a></li>
@@ -282,20 +306,20 @@
                   /></a>
                   <div class="catalog__item-part">
                     <a class="catalog__item-title" href="#"
-                      >Садовая электро-техника</a>
-                      <ul>
-                        <li><a href="">Аэраторы для газона</a></li>
-                        <li><a href="">Газонокосилки Электрические</a></li>
-                        <li><a href="">Дровоколы</a></li>
-                        <li><a href="">Измельчители веток</a></li>
-                        <li><a href="">Кормоизмельчители</a></li>
-                        <li><a href="">Ножницы для травы и кустарника</a></li>
-                        <li><a href="">Садовые пылесосы</a></li>
-                        <li><a href="">Триммеры для травы</a></li>
-                        <li><a href="">Электрокультиваторы</a></li>
-                        <li><a href="">Электропилы цепные</a></li>
-                      </ul>
-                  
+                      >Садовая электро-техника</a
+                    >
+                    <ul>
+                      <li><a href="">Аэраторы для газона</a></li>
+                      <li><a href="">Газонокосилки Электрические</a></li>
+                      <li><a href="">Дровоколы</a></li>
+                      <li><a href="">Измельчители веток</a></li>
+                      <li><a href="">Кормоизмельчители</a></li>
+                      <li><a href="">Ножницы для травы и кустарника</a></li>
+                      <li><a href="">Садовые пылесосы</a></li>
+                      <li><a href="">Триммеры для травы</a></li>
+                      <li><a href="">Электрокультиваторы</a></li>
+                      <li><a href="">Электропилы цепные</a></li>
+                    </ul>
                   </div>
                 </li>
                 <li class="catalog__item">
@@ -304,25 +328,25 @@
                   /></a>
                   <div class="catalog__item-part">
                     <a class="catalog__item-title" href=""
-                      >Садовая мото-техника</a>
-                      <ul>
-                        <li><a href="">Бензопилы</a></li>
-                        <li><a href="">Аксессуары для бензопил</a></li>
-                        <li><a href="">Воздуходувы бензиновые </a></li>
-                        <li><a href="">Газонокосилки бензиновые</a></li>
-                        <li><a href="">Двигатели</a></li>
-                        <li><a href="">Кусторезы бензиновые</a></li>
-                        <li><a href="">Лодочные моторы</a></li>
-                        <li><a href="">Мотоблоки</a></li>
-                        <li><a href="">Мотобуры</a></li>
-                        <li><a href="">мотокосы</a></li>
-                        <li><a href="">Аксессуары для мотокос</a></li>
-                        <li><a href="">Опрыскиватели бензиновые</a></li>
-                        <li><a href="">Снегоуборочные машины</a></li>
-                        <li><a href="">Тракторы садовые, райдеры</a></li>
-                        <li><a href="">Измельчители бензиновые</a></li>
-                      </ul>
-                    
+                      >Садовая мото-техника</a
+                    >
+                    <ul>
+                      <li><a href="">Бензопилы</a></li>
+                      <li><a href="">Аксессуары для бензопил</a></li>
+                      <li><a href="">Воздуходувы бензиновые </a></li>
+                      <li><a href="">Газонокосилки бензиновые</a></li>
+                      <li><a href="">Двигатели</a></li>
+                      <li><a href="">Кусторезы бензиновые</a></li>
+                      <li><a href="">Лодочные моторы</a></li>
+                      <li><a href="">Мотоблоки</a></li>
+                      <li><a href="">Мотобуры</a></li>
+                      <li><a href="">мотокосы</a></li>
+                      <li><a href="">Аксессуары для мотокос</a></li>
+                      <li><a href="">Опрыскиватели бензиновые</a></li>
+                      <li><a href="">Снегоуборочные машины</a></li>
+                      <li><a href="">Тракторы садовые, райдеры</a></li>
+                      <li><a href="">Измельчители бензиновые</a></li>
+                    </ul>
                   </div>
                 </li>
                 <li class="catalog__item">
@@ -330,19 +354,17 @@
                     ><img src="./img/kosilka.jpg" alt=""
                   /></a>
                   <div class="catalog__item-part">
-                    <a class="catalog__item-title" href=""
-                      >Системы полива</a>
-                      <ul>
-                        <li><a href="">Автоматический полив</a></li>
-                        <li><a href="">Агроволокно</a></li>
-                        <li><a href="">Водозаборные колонки</a></li>
-                        <li><a href="">Микрокапельный полив</a></li>
-                        <li><a href="">Ручной полив</a></li>
-                        <li><a href="">Таймеры для полива</a></li>
-                        <li><a href="">Фитинги и трубы</a></li>
-                        <li><a href="">Смесители</a></li>
-                      </ul>
-                  
+                    <a class="catalog__item-title" href="">Системы полива</a>
+                    <ul>
+                      <li><a href="">Автоматический полив</a></li>
+                      <li><a href="">Агроволокно</a></li>
+                      <li><a href="">Водозаборные колонки</a></li>
+                      <li><a href="">Микрокапельный полив</a></li>
+                      <li><a href="">Ручной полив</a></li>
+                      <li><a href="">Таймеры для полива</a></li>
+                      <li><a href="">Фитинги и трубы</a></li>
+                      <li><a href="">Смесители</a></li>
+                    </ul>
                   </div>
                 </li>
                 <li class="catalog__item">
@@ -350,24 +372,22 @@
                     ><img src="./img/kosilka.jpg" alt=""
                   /></a>
                   <div class="catalog__item-part">
-                    <a class="catalog__item-title" href=""
-                      >Электроснабжение</a>
-                      <ul>
-                        <li><a href="">Автоматика на генератор</a></li>
-                        <li><a href="">Акуумуляторы ИБП</a></li>
-                        <li><a href="">Видеонаблюдение</a></li>
-                        <li><a href="">Генераторы</a></li>
-                        <li><a href="">Аксессуары для генераторов</a></li>
-                        <li><a href="">Гиротранспорт</a></li>
-                        <li><a href="">Источники бесперебойного питания</a></li>
-                        <li><a href="">Электрофурнитура</a></li>
-                        <li><a href="">Стабилизаторы напряжения</a></li>
-                        <li><a href="">Удленители кабеля</a></li>
-                        <li><a href="">Электровелосипеды</a></li>
-                        <li><a href="">Прожекторы, фонари</a></li>
-                        <li><a href="">Солнечные панели</a></li>
-                      </ul>
-                  
+                    <a class="catalog__item-title" href="">Электроснабжение</a>
+                    <ul>
+                      <li><a href="">Автоматика на генератор</a></li>
+                      <li><a href="">Акуумуляторы ИБП</a></li>
+                      <li><a href="">Видеонаблюдение</a></li>
+                      <li><a href="">Генераторы</a></li>
+                      <li><a href="">Аксессуары для генераторов</a></li>
+                      <li><a href="">Гиротранспорт</a></li>
+                      <li><a href="">Источники бесперебойного питания</a></li>
+                      <li><a href="">Электрофурнитура</a></li>
+                      <li><a href="">Стабилизаторы напряжения</a></li>
+                      <li><a href="">Удленители кабеля</a></li>
+                      <li><a href="">Электровелосипеды</a></li>
+                      <li><a href="">Прожекторы, фонари</a></li>
+                      <li><a href="">Солнечные панели</a></li>
+                    </ul>
                   </div>
                 </li>
                 <li class="catalog__item">
@@ -375,25 +395,23 @@
                     ><img src="./img/kosilka.jpg" alt=""
                   /></a>
                   <div class="catalog__item-part">
-                    <a class="catalog__item-title" href=""
-                      >Насосная техника</a>
-                      <ul>
-                        <li><a href="">Автоматика для насосов</a></li>
-                        <li><a href="">Гидрофоры</a></li>
-                        <li><a href="">Гидроаккумуляторы</a></li>
-                        <li><a href="">Дренажные насосы</a></li>
-                        <li><a href="">Мотопомпы</a></li>
-                        <li><a href="">Напорны насосы</a></li>
-                        <li><a href="">Насосы для басейна </a></li>
-                        <li><a href="">Насосы для скважин</a></li>
+                    <a class="catalog__item-title" href="">Насосная техника</a>
+                    <ul>
+                      <li><a href="">Автоматика для насосов</a></li>
+                      <li><a href="">Гидрофоры</a></li>
+                      <li><a href="">Гидроаккумуляторы</a></li>
+                      <li><a href="">Дренажные насосы</a></li>
+                      <li><a href="">Мотопомпы</a></li>
+                      <li><a href="">Напорны насосы</a></li>
+                      <li><a href="">Насосы для басейна </a></li>
+                      <li><a href="">Насосы для скважин</a></li>
 
-                        <li><a href="">Насосы для фонтана</a></li>
-                        <li><a href="">Прочистка труб</a></li>
-                        <li><a href="">Циркуляционны насосы</a></li>
-                        <li><a href="">Фильтры для води</a></li>
-                        <li><a href="">Вакуумные насосы</a></li>
-                      </ul>
-                    
+                      <li><a href="">Насосы для фонтана</a></li>
+                      <li><a href="">Прочистка труб</a></li>
+                      <li><a href="">Циркуляционны насосы</a></li>
+                      <li><a href="">Фильтры для води</a></li>
+                      <li><a href="">Вакуумные насосы</a></li>
+                    </ul>
                   </div>
                 </li>
                 <li class="catalog__item">
@@ -402,18 +420,37 @@
                   /></a>
                   <div class="catalog__item-part">
                     <a class="catalog__item-title" href=""
-                      >Моющие оборудование</a>
-                      <ul>
-                        <li><a href="">Мойки высокого давления</a></li>
-                        <li><a href=""></a></li>
-                        <li><a href="">Ручная мойка</a></li>
-                        <li><a href="">Моющие средства</a></li>
-                        <li><a href="">Пароочистители</a></li>
-                        <li><a href="">Пылесосы</a></li>
-                        <li><a href="">Электровеники</a></li>
-                        <li><a href="">Полировальная техника</a></li>
-                      </ul>
-                    
+                      >Моющие оборудование</a
+                    >
+                    <ul>
+                      <li><a href="">Мойки высокого давления</a></li>
+                      <li><a href=""></a></li>
+                      <li><a href="">Ручная мойка</a></li>
+                      <li><a href="">Моющие средства</a></li>
+                      <li><a href="">Пароочистители</a></li>
+                      <li><a href="">Пылесосы</a></li>
+                      <li><a href="">Электровеники</a></li>
+                      <li><a href="">Полировальная техника</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="catalog__item">
+                  <a class="catalog__img" href=""
+                    ><img src="./img/kosilka.jpg" alt=""
+                  /></a>
+                  <div class="catalog__item-part">
+                    <a class="catalog__item-title" href="">Текстиль</a>
+                    <ul>
+                      <li><a href="">Защитная одежда</a></li>
+                      <li><a href=""></a>Подушки</li>
+                      <li><a href="">Одеяла</a></li>
+                      <li><a href="">Наматрасники</a></li>
+                      <li><a href="">Полотенца</a></li>
+                      <li><a href="">Постельное бельё</a></li>
+                      <li><a href="">Товари для отдыха</a></li>
+                      <li><a href="">Покривала для кровати</a></li>
+                      <li><a href="">Палатки, шатры</a></li>
+                    </ul>
                   </div>
                 </li>
                 <li class="catalog__item">
@@ -422,49 +459,28 @@
                   /></a>
                   <div class="catalog__item-part">
                     <a class="catalog__item-title" href=""
-                      >Текстиль</a>
-                      <ul>
-                        <li><a href="">Защитная одежда</a></li>
-                        <li><a href=""></a>Подушки</li>
-                        <li><a href="">Одеяла</a></li>
-                        <li><a href="">Наматрасники</a></li>
-                        <li><a href="">Полотенца</a></li>
-                        <li><a href="">Постельное бельё</a></li>
-                        <li><a href="">Товари для отдыха</a></li>
-                        <li><a href="">Покривала для кровати</a></li>
-                        <li><a href="">Палатки, шатры</a></li>
-                      </ul>
-                    
-                  </div>
-                </li>
-                <li class="catalog__item">
-                  <a class="catalog__img" href=""
-                    ><img src="./img/kosilka.jpg" alt=""
-                  /></a>
-                  <div class="catalog__item-part">
-                    <a class="catalog__item-title" href=""
-                      >Строительный инструмент</a>
-                      <ul>
-                        <li><a href="">Автомобильный инструмент</a></li>
-                        <li><a href="">Бетонная техника</a></li>
-                        <li><a href="">Дрели-шуруповерты</a></li>
-                        <li><a href="">Зарядные устройства</a></li>
-                        <li><a href="">Измерительные приборы</a></li>
-                        <li><a href="">Компрессоры</a></li>
-                        <li><a href="">Миксеры строительные</a></li>
-                        <li><a href="">Перфораторы, отбойные молотки</a></li>
-                        <li><a href="">Пилы и станки</a></li>
-                        <li><a href="">Покрасочные станции</a></li>
-                        <li><a href="">Ручной инструмент</a></li>
-                        <li><a href="">Сварочные инверторы</a></li>
-                        <li><a href="">Тепловые пушки</a></li>
-                        <li><a href="">Установки алмазного бурения</a></li>
-                        <li><a href="">Фены технические</a></li>
-                        <li><a href="">Шлифовальные машины</a></li>
-                        <li><a href="">"Болгарки"</a></li>
-                        <li><a href="">Электролобзики</a></li>
-                      </ul>
-                    
+                      >Строительный инструмент</a
+                    >
+                    <ul>
+                      <li><a href="">Автомобильный инструмент</a></li>
+                      <li><a href="">Бетонная техника</a></li>
+                      <li><a href="">Дрели-шуруповерты</a></li>
+                      <li><a href="">Зарядные устройства</a></li>
+                      <li><a href="">Измерительные приборы</a></li>
+                      <li><a href="">Компрессоры</a></li>
+                      <li><a href="">Миксеры строительные</a></li>
+                      <li><a href="">Перфораторы, отбойные молотки</a></li>
+                      <li><a href="">Пилы и станки</a></li>
+                      <li><a href="">Покрасочные станции</a></li>
+                      <li><a href="">Ручной инструмент</a></li>
+                      <li><a href="">Сварочные инверторы</a></li>
+                      <li><a href="">Тепловые пушки</a></li>
+                      <li><a href="">Установки алмазного бурения</a></li>
+                      <li><a href="">Фены технические</a></li>
+                      <li><a href="">Шлифовальные машины</a></li>
+                      <li><a href="">"Болгарки"</a></li>
+                      <li><a href="">Электролобзики</a></li>
+                    </ul>
                   </div>
                 </li>
               </ul>
@@ -557,7 +573,12 @@
           </div>
           <a class="footer__mail" href="">sales@sad-ogorod.od.ua</a>
         </div>
-        <a class="footer__mob-menu">Информация</a>
+        <div class="footer__mob-menu-container">
+          <a class="footer__mob-menu">Информация</a>
+        </div>
+        <div class="footer__login-container">
+
+        </div>
       </div>
     </footer>
   </body>
