@@ -8,7 +8,6 @@ $(document).ready(function () {
     nextArrow: $('.line__btn-right-arrow'),
     prevArrow: $('.line__btn-left-arrow'), 
     variableWidth: true,
-
   });
 
   $('.catalog__item').on('click',function(event){
@@ -63,8 +62,33 @@ $(document).ready(function () {
   $('.mob__menu-item').on('click',function(event){
     event.preventDefault();
     $(this).toggleClass('active');
-
   })
+  $('.catalog__btn').on('click',function(event){
+    event.preventDefault();
+    $(".catalog__menu-list").toggleClass('active');
+  })
+  $('.catalog__menu-item').on('click',function(event){
+    event.preventDefault();
+    $(this).toggleClass('active');
+  })
+
+
+  $(".product__gallery-slider").slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    fade: true,
+    centerMode: true,
+    asNavFor:".product__gallery-slider-nav"
+  });
+  $(".product__gallery-slider-nav").slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    asNavFor: ".product__gallery-slider",
+    dots: false,
+    
+    focusOnSelect: true
+  });
 });
 
 
