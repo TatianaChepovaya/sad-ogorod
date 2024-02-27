@@ -1456,6 +1456,27 @@ display: block;
   .category__filter-item span{
     font-size: 15px;
   }
+  .product__info-in-stock{
+    text-align: start;
+  }
+  .btn__buy{
+    height: auto;
+  }
+  .btn__buy-box{
+    padding: 0;
+  }
+  .btn__buy-box .btn__buy{
+    height: 61px;
+    font-size: 25px;
+    padding: 15px 25px;
+  }
+  .product__price{
+    padding: 0;
+    line-height: 61px;
+  }
+  .product__price div{
+    border: 1px rgba(0,0,0,.04) solid;
+  }
 }
 @media screen and (min-width: 1243px) {
   .catalog__item {
