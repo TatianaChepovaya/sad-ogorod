@@ -210,7 +210,6 @@
     </header>
     <main>
       <div class="container product__container">
-        
         <div class="product__right-part">
           <div class="breadcrumbs"></div>
           <div class="product__title-container">
@@ -248,38 +247,59 @@
               </div>
             </div>
             <div class="product__info-content">
-              <div class="product__info-in-stock">Есть в наличии</div>
+              <div class="product__info-in-stock">
+                <span>
+                  <svg>
+                    <use href="./img/symbol-defs.svg#icon-checkmark"></use>
+                  </svg>
+                </span>
+                Есть в наличии
+              </div>
               <div class="product__info-buy">
                 <div class="product__price">
-                  <div>5000 <span>грн</span></div></div>
-                <div class="btn__buy-box"><a class="btn__buy" href="">Купить</a></div>
-                
+                  <div>5000 <span>грн</span></div>
+                </div>
+                <div class="btn__buy-box">
+                  <a class="btn__buy" href="">Купить</a>
+                </div>
               </div>
               <div class="product__info-reviews">
                 <div>
-                <ul class="stars__list">
-                  <li><svg>
-                    <use href="./img/symbol-defs.svg#icon-star"></use></svg
-                ></li> <li><svg>
-                  <use href="./img/symbol-defs.svg#icon-star"></use></svg
-              ></li> <li><svg>
-                <use href="./img/symbol-defs.svg#icon-star"></use></svg
-            ></li>
-                <li><svg>
-                  <use href="./img/symbol-defs.svg#icon-star"></use></svg
-              ></li>
-              <li><svg>
-                <use href="./img/symbol-defs.svg#icon-star"></use></svg
-            ></li>
-            
-                </ul>
-                <a href="">3 отзыва</a>
-              </div></div>
+                  <ul class="stars__list">
+                    <li>
+                      <svg>
+                        <use href="./img/symbol-defs.svg#icon-star"></use>
+                      </svg>
+                    </li>
+                    <li>
+                      <svg>
+                        <use href="./img/symbol-defs.svg#icon-star"></use>
+                      </svg>
+                    </li>
+                    <li>
+                      <svg>
+                        <use href="./img/symbol-defs.svg#icon-star"></use>
+                      </svg>
+                    </li>
+                    <li>
+                      <svg>
+                        <use href="./img/symbol-defs.svg#icon-star"></use>
+                      </svg>
+                    </li>
+                    <li>
+                      <svg>
+                        <use href="./img/symbol-defs.svg#icon-star"></use>
+                      </svg>
+                    </li>
+                  </ul>
+                  <a href="">3 отзыва</a>
+                </div>
+              </div>
               <div class="product__info-parameters">
                 <span>Тип:</span>Перфораторы<font>\</font>
                 <span>Мощность:</span>АКБ<font>\</font>
                 <span>Тип патрона:</span>SDS Plus<font>\</font>
-                <span>Энергия удара:</span>3.3 Дж<font>\</font>
+                <span>Энергия удара:</span>3.3 Дж
               </div>
               <div class="product__info-social">
                 <span>Поделитесь ссылкой</span>
@@ -304,26 +324,30 @@
             </div>
             <div class="product__info-details">
               <ul>
-                <li>
+                <li class="product__info-details-item">
                   <span>Доставка</span>
-                  <ul>
+
+                  <ul class="product__info-details-list">
                     <li>Курьером по Одессе</li>
                     <li>Службами доставки по Укране</li>
                   </ul>
+                  <img src="./img/details.svg" alt="" />
                 </li>
-                <li>
+                <li class="product__info-details-item">
                   <span>Оплата</span>
-                  <ul>
+                  <ul class="product__info-details-list">
                     <li>Оплата при получении товара</li>
                     <li>Наличный и безналичный расчет</li>
                   </ul>
+                  <img src="./img/details2.svg" alt="" />
                 </li>
-                <li>
+                <li class="product__info-details-item">
                   <span>Гарантия</span>
-                  <ul>
+                  <ul class="product__info-details-list">
                     <li>Гарантия от производителя</li>
                     <li>Обмен/возврат товара в течении 14 дней</li>
                   </ul>
+                  <img src="./img/details3.svg" alt="" />
                 </li>
               </ul>
             </div>
@@ -565,7 +589,7 @@
                 </ul>
               </li>
               <li class="category__filter-item">
-               <span>Мощность</span> 
+                <span>Мощность</span>
                 <ul>
                   <li>
                     <a href=""> АКБ <span>52</span></a>
