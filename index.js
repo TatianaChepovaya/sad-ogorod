@@ -5,73 +5,72 @@ $(document).ready(function () {
     autoplay: true,
     autoplaySpeed: 2000,
     dots: true,
-    nextArrow: $('.line__btn-right-arrow'),
-    prevArrow: $('.line__btn-left-arrow'), 
-    variableWidth: true,
+    nextArrow: $(".line__btn-right-arrow"),
+    prevArrow: $(".line__btn-left-arrow"),
+    variableWidth: true
   });
 
-  $('.catalog__item').on('click',function(event){
+  $(".catalog__item").on("click", function (event) {
     event.preventDefault();
-    $(this).toggleClass('active');
-  })
+    $(this).toggleClass("active");
+  });
 
-   if ($(window).width() < 768) {
-    $('.login').appendTo('.footer__login-container')
+  if ($(window).width() < 768) {
+    $(".login").appendTo(".footer__login-container");
   }
 
   if ($(window).width() < 768) {
-    $('.menu__desk').appendTo('.footer__mob-menu-container')
+    $(".menu__desk").appendTo(".footer__mob-menu-container");
   }
 
-  $('.footer__mob-menu-container').on('click',function(event){
+  $(".footer__mob-menu-container").on("click", function (event) {
     event.preventDefault();
-    $(this).toggleClass('active');
-  })
+    $(this).toggleClass("active");
+  });
 
-  $('.footer__login-container').on('click',function(event){
+  $(".footer__login-container").on("click", function (event) {
     event.preventDefault();
-    $(this).toggleClass('active');
-  })
+    $(this).toggleClass("active");
+  });
 
   if ($(window).width() < 768) {
-    $('.login__container').appendTo('.footer__login-container')
+    $(".login__container").appendTo(".footer__login-container");
   }
-  $('.btn__phone').on('click',function(event){
+  $(".btn__phone").on("click", function (event) {
     event.preventDefault();
-    $('.phone__list').toggleClass('active');
-    $('.phone__container').toggleClass('active');
-  })
-  $('.phone__list').on('click',function(event){
+    $(".phone__list").toggleClass("active");
+    $(".phone__container").toggleClass("active");
+  });
+  $(".phone__list").on("click", function (event) {
     event.preventDefault();
-    $(".contact__form").toggleClass('active');
-  })
-  $('.login__part').on('click',function(event){
+    $(".contact__form").toggleClass("active");
+  });
+  $(".login__part").on("click", function (event) {
     event.preventDefault();
-    $(this).toggleClass('active');
-  })
-  $('.btn__search').on('click',function(event){
+    $(this).toggleClass("active");
+  });
+  $(".btn__search").on("click", function (event) {
     event.preventDefault();
-    $('.search').toggleClass('active');
-    $('.search__container').toggleClass('active');
-  })
-  $('.btn__menu').on('click',function(event){
+    $(".search").toggleClass("active");
+    $(".search__container").toggleClass("active");
+  });
+  $(".btn__menu").on("click", function (event) {
     event.preventDefault();
-    $(".mob__menu").toggleClass('active');
-    $(".mob__menu-container").toggleClass('active');
-  })
-  $('.mob__menu-item').on('click',function(event){
+    $(".mob__menu").toggleClass("active");
+    $(".mob__menu-container").toggleClass("active");
+  });
+  $(".mob__menu-item").on("click", function (event) {
     event.preventDefault();
-    $(this).toggleClass('active');
-  })
-  $('.catalog__btn').on('click',function(event){
+    $(this).toggleClass("active");
+  });
+  $(".catalog__btn").on("click", function (event) {
     event.preventDefault();
-    $(".catalog__menu-list").toggleClass('active');
-  })
-  $('.catalog__menu-item').on('click',function(event){
+    $(".catalog__menu-list").toggleClass("active");
+  });
+  $(".catalog__menu-item").on("click", function (event) {
     event.preventDefault();
-    $(this).toggleClass('active');
-  })
-
+    $(this).toggleClass("active");
+  });
 
   $(".product__gallery-slider").slick({
     slidesToShow: 1,
@@ -79,16 +78,22 @@ $(document).ready(function () {
     arrows: false,
     fade: true,
     centerMode: true,
-    asNavFor:".product__gallery-slider-nav"
+    asNavFor: ".product__gallery-slider-nav"
   });
   $(".product__gallery-slider-nav").slick({
     slidesToShow: 3,
     slidesToScroll: 1,
     asNavFor: ".product__gallery-slider",
     dots: false,
-    
+
     focusOnSelect: true
   });
+
+  if ($(window).width() < 768) {
+    $(".product__info-social").appendTo(".product__right-part");
+  }
+  $(".product__details-tabs li").on("click", function (event) {
+    event.preventDefault();
+    $(this).toggleClass("active");
+  });
 });
-
-
